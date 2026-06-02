@@ -1,0 +1,2877 @@
+<html
+  lang="id"
+  dir="ltr"
+  data-bs-theme="light"
+  data-color-theme="Aqua_Theme"
+  data-layout="horizontal"
+  data-boxed-layout="boxed"
+  data-card="shadow"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./assets/favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/modern/css/styles.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/modern/libs/owl.carousel/dist/assets/owl.carousel.min.css"
+    />
+
+    <title>Dashboard</title>
+    <style>
+      .photo {
+        width: 110px;
+        max-width: 110px;
+        min-width: 110px;
+        height: 150px;
+        max-height: 150px;
+        min-height: 150px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+
+  <body class="link-sidebar" data-sidebartype="full">
+    <div id="main-wrapper">
+      <div class="page-wrapper">
+        <div class="body-wrapper" style="padding-top: 0px">
+          <div class="container" style="padding-top: 3rem">
+            <div class="row justify-content-center">
+              <div class="col-lg-4 col-sm-12">
+                <div class="card">
+                  <div class="card-header bg-primary-subtle">
+                    <div class="row align-items-center">
+                      <div class="col-6">
+                        <a
+                          href="https://sso.esaunggul.ac.id/dashboard"
+                          class="text-nowrap logo-img"
+                        >
+                          <img
+                            src="./assets/ueuhitam-unggul.png"
+                            class="dark-logo w-100"
+                            alt="Logo-Dark"
+                          />
+                          <img
+                            src="./assets/ueuputih-unggul.png"
+                            class="light-logo w-100"
+                            alt="Logo-light"
+                            style="display: none"
+                          />
+                        </a>
+                      </div>
+                      <div class="col-6">
+                        <div class="text-end">
+                          <button
+                            class="btn bg-primary-subtle rounded-circle btn-lg round-48 moon dark-layout"
+                            style="display: inline"
+                          >
+                            <i
+                              class="ti ti-moon moon fs-4"
+                              style="display: inline"
+                            ></i>
+                          </button>
+                          <button
+                            class="btn bg-primary-subtle rounded-circle btn-lg round-48 sun light-layout"
+                            style="display: none"
+                          >
+                            <i
+                              class="ti ti-sun sun fs-4"
+                              style="display: none"
+                            ></i>
+                          </button>
+                          <a
+                            href="javascript:void(0);"
+                            class="btn bg-danger-subtle rounded-circle btn-lg text-danger round-48"
+                            id="logoutbutton"
+                            title="Logout"
+                            ><i class="ti ti-logout fs-4"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body p-4">
+                    <center>
+                      <img
+                        src="./assets/modern/images/profile/user-7.jpg"
+                        class="rounded-circle mb-3"
+                        width="180"
+                        height="180"
+                      />
+                      <h4 class="card-title mb-1">Anggara Athaya Noor</h4>
+                      <span class="fs-2">20250801229</span>
+                      <p class="mt-3">
+                        <button
+                          class="btn bg-warning-subtle text-warning mb-3 me-1"
+                          href="#resetpassword"
+                          data-bs-toggle="modal"
+                          data-bs-target="#resetpassword"
+                          aria-expanded="false"
+                          aria-controls="resetpassword"
+                          title="Ganti Password"
+                        >
+                          <i class="ti ti-lock"></i> Ganti Password
+                        </button>
+
+                        <button
+                          class="btn bg-primary-subtle text-primary mb-3 me-1"
+                          href="#modal-avatar"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modal-avatar"
+                          aria-expanded="false"
+                          aria-controls="collapseExample"
+                          title="Ganti Avatar"
+                        >
+                          <i class="ti ti-user-circle"></i> Ganti Avatar
+                        </button>
+                      </p>
+                    </center>
+                    <hr />
+                    <ul class="feeds ps-0">
+                      <div class="feed-item py-2 pe-3 ps-4">
+                        <div class="d-flex align-items-center gap-6">
+                          <a
+                            href="javascript:void(0)"
+                            class="round-40 bg-info-subtle text-info rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                          >
+                            <i class="ti ti-building fs-6"></i>
+                          </a>
+                          <div class="text-truncate">
+                            <span class="text-dark fw-medium">
+                              Fakultas Ilmu Komputer
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="feed-item py-2 pe-3 ps-4">
+                        <div class="d-flex align-items-center gap-6">
+                          <a
+                            href="javascript:void(0)"
+                            class="round-40 bg-secondary-subtle text-secondary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                          >
+                            <i class="ti ti-home-2 fs-6"></i>
+                          </a>
+                          <div class="text-truncate">
+                            <span class="text-dark fw-medium">
+                              Teknik Informatika
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="feed-item py-2 pe-3 ps-4">
+                        <div class="d-flex align-items-center gap-6">
+                          <a
+                            href="javascript:void(0)"
+                            class="round-40 bg-warning-subtle text-warning rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                          >
+                            <i class="ti ti-map-pin fs-6"></i>
+                          </a>
+                          <div class="text-truncate">
+                            <span class="text-dark fw-medium">
+                              Reguler-1 - Bekasi
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="feed-item py-2 pe-3 ps-4">
+                        <div class="d-flex align-items-center gap-6">
+                          <a
+                            href="javascript:void(0)"
+                            class="round-40 bg-danger-subtle text-danger rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                          >
+                            <i class="ti ti-phone fs-6"></i>
+                          </a>
+                          <div class="text-truncate">
+                            <span class="text-dark fw-medium">
+                              089659977770
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="feed-item py-2 pe-3 ps-4">
+                        <div class="d-flex align-items-center gap-6">
+                          <a
+                            href="javascript:void(0)"
+                            class="round-40 bg-dark-subtle text-dark rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
+                          >
+                            <i class="ti ti-stars fs-6"></i>
+                          </a>
+                          <div class="text-truncate">
+                            <span class="text-dark fw-medium"> - </span>
+                          </div>
+                        </div>
+                      </div>
+                    </ul>
+                    <hr />
+
+                    <ul class="list-group">
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-start"
+                      >
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">
+                            <a href="https://sso.esaunggul.ac.id/announcements"
+                              ><i class="ti ti-speakerphone fs-4 me-2"></i>
+                              Pengumuman</a
+                            >
+                          </div>
+                        </div>
+                        <span class="badge text-bg-primary rounded-pill"
+                          >17</span
+                        >
+                      </li>
+                      <li
+                        class="list-group-item d-flex justify-content-between align-items-start"
+                      >
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold">
+                            <a href="https://sso.esaunggul.ac.id/guidence">
+                              <i class="ti ti-arrow-guide fs-4 me-2"></i>
+                              Panduan
+                            </a>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-8 col-sm-12">
+                <div class="row">
+                  <div class="col-12">
+                    <div
+                      class="card w-100 bg-primary-subtle overflow-hidden shadow-none mb-3"
+                    >
+                      <div class="card-body position-relative">
+                        <div class="row">
+                          <div class="col-sm-7">
+                            <div class="d-flex align-items-center">
+                              <h5 class="fw-semibold mb-0 fs-6">
+                                <span id="sapa">Selamat Siang</span>, Anggara
+                                Athaya Noor
+                              </h5>
+                            </div>
+                            <div class="d-flex align-items-center mb-7">
+                              <p class="fs-3 mb-0 opacity-75">
+                                Selasa, 02 Juni 2026,
+                                <span id="clock">13:00:00</span>
+                              </p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                              <div
+                                class="border-end pe-4 border-muted border-opacity-10"
+                              >
+                                <h3
+                                  class="mb-1 fw-semibold fs-8 d-flex align-content-center"
+                                >
+                                  3
+                                </h3>
+                                <p class="mb-0 text-dark">
+                                  Perkuliahan hari ini
+                                </p>
+                              </div>
+                              <div class="ps-4">
+                                <h3
+                                  class="mb-1 fw-semibold fs-8 d-flex align-content-center"
+                                >
+                                  85%
+                                </h3>
+                                <p class="mb-0 text-dark">Presentase Kehadiran</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-5">
+                            <div class="welcome-bg-img mb-n7 text-end">
+                              <img
+                                src="./assets/modern/images/backgrounds/welcome-bg.svg"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <style>
+                    .news-ticker {
+                      position: relative;
+                      overflow: hidden;
+                    }
+
+                    .news-content {
+                      display: inline-flex;
+                      animation: ticker 50s linear infinite;
+                      animation-delay: 5s;
+                      /* langsung jalan */
+                    }
+
+                    @keyframes ticker {
+                      0% {
+                        transform: translateX(0%);
+                      }
+
+                      100% {
+                        transform: translateX(-50%);
+                      }
+                    }
+
+                    .news-item {
+                      white-space: nowrap;
+                      display: flex;
+                      align-items: center;
+                      margin-left: 10px;
+                    }
+
+                    .news-item:not(:last-child)::after {
+                      content: " | ";
+                      color: #6c757d;
+                      margin-left: 10px;
+                      /* margin-right: px; */
+                    }
+                  </style>
+
+                  <div class="custom-container mb-3">
+                    <div
+                      class="py-2 bg-primary-subtle rounded-2 overflow-hidden"
+                    >
+                      <div class="news-ticker">
+                        <div class="news-content">
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-7"
+                            >
+                              WASPADA PENIPUAN MENGATASNAMAKAN REKTOR
+                              UNIVERSITAS ESA UNGGUL
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-4"
+                            >
+                              Kesempatan Kuliah Beasiswa di China!
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-5"
+                            >
+                              Webinar Softskill
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-20"
+                            >
+                              Kendala E-Learning !
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-19"
+                            >
+                              Berita Duka 🥀
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-18"
+                            >
+                              The 4th International Youth Conference on Language
+                              and Culture (IYCLAC) 2025
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-17"
+                            >
+                              Hangari Korean Club
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-16"
+                            >
+                              BSI Scholarship 2025!✨🏆
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-15"
+                            >
+                              📢 TOEFL ITP PREPARATION COURSE – Batch 1
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-14"
+                            >
+                              🌐✨ COIL Course: Professional English ✨🌐
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-13"
+                            >
+                              🎉 LOMBA MADING UNIVERSITAS ESA UNGGUL JAKARTA🎉
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-12"
+                            >
+                              Kursus Bahasa Korea - LBK
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-11"
+                            >
+                              GSC Series - Use of AI in Healthcare MIM 513
+                              Artificial Intelligence in Health Data
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-10"
+                            >
+                              Webinar Sharing Alumni
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-9"
+                            >
+                              Kuliah Umum Fakultas Teknik
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-8"
+                            >
+                              ASEAN Week at FPT University, Vietnam!
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-6"
+                            >
+                              Webinar Softskill "AI Tools Masterclass:
+                              Maksimalkan Productivity and Creativity"
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-7"
+                            >
+                              WASPADA PENIPUAN MENGATASNAMAKAN REKTOR
+                              UNIVERSITAS ESA UNGGUL
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-4"
+                            >
+                              Kesempatan Kuliah Beasiswa di China!
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-5"
+                            >
+                              Webinar Softskill
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-20"
+                            >
+                              Kendala E-Learning !
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-19"
+                            >
+                              Berita Duka 🥀
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-18"
+                            >
+                              The 4th International Youth Conference on Language
+                              and Culture (IYCLAC) 2025
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-17"
+                            >
+                              Hangari Korean Club
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-16"
+                            >
+                              BSI Scholarship 2025!✨🏆
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-15"
+                            >
+                              📢 TOEFL ITP PREPARATION COURSE – Batch 1
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-14"
+                            >
+                              🌐✨ COIL Course: Professional English ✨🌐
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-13"
+                            >
+                              🎉 LOMBA MADING UNIVERSITAS ESA UNGGUL JAKARTA🎉
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-12"
+                            >
+                              Kursus Bahasa Korea - LBK
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-11"
+                            >
+                              GSC Series - Use of AI in Healthcare MIM 513
+                              Artificial Intelligence in Health Data
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-10"
+                            >
+                              Webinar Sharing Alumni
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-9"
+                            >
+                              Kuliah Umum Fakultas Teknik
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-8"
+                            >
+                              ASEAN Week at FPT University, Vietnam!
+                            </a>
+                          </div>
+                          <div class="news-item">
+                            <a
+                              href="javascript:void(0)"
+                              class="btn btn-rounded btn-light btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#pengumuman-6"
+                            >
+                              Webinar Softskill "AI Tools Masterclass:
+                              Maksimalkan Productivity and Creativity"
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="modal fade"
+                    id="pengumuman-7"
+                    tabindex="-1"
+                    aria-labelledby="vertical-center-modal"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header d-flex align-items-center">
+                          <h4 class="modal-title" id="myLargeModalLabel">
+                            <i class="ti ti-speakerphone fs-6"></i> WASPADA
+                            PENIPUAN MENGATASNAMAKAN REKTOR UNIVERSITAS ESA
+                            UNGGUL
+                          </h4>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body p-4">
+                          <div class="row">
+                            <div class="col-lg-12 col-sm-12 mb-3">
+                              <img
+                                src="https://sso.esaunggul.ac.id/file/show/poster/Nw"
+                                class="w-100"
+                                alt=""
+                              />
+
+                              <br />
+                              <br />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn bg-danger-subtle text-danger waves-effect text-start"
+                            data-bs-dismiss="modal"
+                          >
+                            Tutup
+                          </button>
+                        </div>
+                      </div>
+                      <!-- /.modal-content -->
+                    </div>
+                  </div>
+                  <div
+                    class="modal fade"
+                    id="pengumuman-4"
+                    tabindex="-1"
+                    aria-labelledby="vertical-center-modal"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header d-flex align-items-center">
+                          <h4 class="modal-title" id="myLargeModalLabel">
+                            <i class="ti ti-speakerphone fs-6"></i> Kesempatan
+                            Kuliah Beasiswa di China!
+                          </h4>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body p-4">
+                          <div class="row">
+                            <div class="col-lg-12 col-sm-12 mb-3">
+                              <img
+                                src="https://sso.esaunggul.ac.id/file/show/poster/NA"
+                                class="w-100"
+                                alt=""
+                              />
+
+                              <br />
+                              <br />
+                              <p>
+                                <strong
+                                  >Kesempatan Kuliah di China dengan
+                                  Beasiswa!<br /><br />Universitas Esa Unggul
+                                  membuka pendaftaran Joint Degree 2+2 dengan
+                                  Beasiswa dari Nanjing Municipal Government di
+                                  Nanjing Xiaozhuang University (NXU), China!<br /><br />Deadline:
+                                  16 Januari 2026<br />Beasiswa mencakup:<br />1.
+                                  Uang kuliah<br />2. Subsidi Asrama<br /><br />Dokumen
+                                  yang diperlukan:<br />1. Surat rekomendasi
+                                  dari Dekan/Kaprodi/KUI<br />2. Surat motivasi
+                                  (minimal 1000 kata dalam Bahasa Inggris)<br />3.
+                                  Sertifikat bahasa inggris (ex. TOEFL: 480,
+                                  IELTS: 5, atau Duolingo: 100)<br />4. Surat
+                                  izin orang tua<br />5. Scan paspor dan Kartu
+                                  Keluarga<br />6. Transkrip nilai semester
+                                  1-3<br />7. Foto background putih 3,3 x 4,8 cm
+                                  (4 pcs)<br />8. Formulir NXU, biaya
+                                  pendaftaran: 300 USD (Refund jika tidak
+                                  lolos). Unduh di sini:&nbsp;<a
+                                    href="https://bit.ly/NXURegistForm2025"
+                                    target="_blank"
+                                    rel="noopener"
+                                    data-saferedirecturl="https://www.google.com/url?q=https://bit.ly/NXURegistForm2025&amp;source=gmail&amp;ust=1767838811555000&amp;usg=AOvVaw09mS0pSFOS8iqV-T75CxZd"
+                                    >https://bit.ly/<wbr />NXURegistForm2025</a
+                                  ><br />9. Medical checkup<br /><br />Jangan
+                                  lewatkan kesempatan emas ini! Daftar
+                                  sekarang:&nbsp;<a
+                                    href="https://bit.ly/NXUJointDegree2026"
+                                    target="_blank"
+                                    rel="noopener"
+                                    data-saferedirecturl="https://www.google.com/url?q=https://bit.ly/NXUJointDegree2026&amp;source=gmail&amp;ust=1767838811555000&amp;usg=AOvVaw1ed2UO98WCpoXOY9eDDEzf"
+                                    >https://bit.ly/<wbr />NXUJointDegree2026</a
+                                  ><br /><br />Info lebih lanjut:<br />Email:&nbsp;<a
+                                    href="mailto:international.office@esaunggul.ac.id"
+                                    target="_blank"
+                                    rel="noopener"
+                                    >international.office@<wbr />esaunggul.ac.id</a
+                                  ><br />WhatsApp: +62812 9221 8139</strong
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn bg-danger-subtle text-danger waves-effect text-start"
+                            data-bs-dismiss="modal"
+                          >
+                            Tutup
+                          </button>
+                        </div>
+                      </div>
+                      <!-- /.modal-content -->
+                    </div>
+                  </div>
+                  <div
+                    class="modal fade"
+                    id="pengumuman-5"
+                    tabindex="-1"
+                    aria-labelledby="vertical-center-modal"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header d-flex align-items-center">
+                          <h4 class="modal-title" id="myLargeModalLabel">
+                            <i class="ti ti-speakerphone fs-6"></i> Webinar
+                            Softskill
+                          </h4>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body p-4">
+                          <div class="row">
+                            <div class="col-lg-12 col-sm-12 mb-3">
+                              <img
+                                src="https://sso.esaunggul.ac.id/file/show/poster/NQ"
+                                class="w-100"
+                                alt=""
+                              />
+
+                              <br />
+                              <br />
+                              <p>
+                                Sobat Unggul! 🙌🏻<br /><br />Webinar Softskill
+                                Gratis ada lagi nih‼️<br /><br />“Career Hopping
+                                vs Career Growth Mana yang Lebih Sukses?" -
+                                Norma Rosyianita Dewi (Founder NutureRealm
+                                Consulting)<br /><br />🗓️ Jumat, 4 Juli 2025<br />⏰
+                                13.00 - 14.30 WIB<br />📍 Zoom Meeting<br />📌
+                                Segera daftar di seminar-web.esaunggul.ac.id<br />✨
+                                Free e-sertifikat<br />🔊 Terbuka untuk Umum
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn bg-danger-subtle text-danger waves-effect text-start"
+                            data-bs-dismiss="modal"
+                          >
+                            Tutup
+                          </button>
+                        </div>
+                      </div>
+                      <!-- /.modal-content -->
+                    </div>
+                  </div>
+                  <div
+                    class="modal fade"
+                    id="pengumuman-20"
+                    tabindex="-1"
+                    aria-labelledby="vertical-center-modal"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header d-flex align-items-center">
+                          <h4 class="modal-title" id="myLargeModalLabel">
+                            <i class="ti ti-speakerphone fs-6"></i> Kendala
+                            E-Learning !
+                          </h4>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body p-4">
+                          <div class="row">
+                            <div class="col-lg-12 col-sm-12 mb-3">
+                              <img
+                                src="https://sso.esaunggul.ac.id/file/show/poster/MjA"
+                                class="w-100"
+                                alt=""
+                              />
+
+                              <br />
+                              <br />
+                              <h3 dir="ltr">
+                                Panduan Penanganan Kendala Akses Website
+                                E-Learning
+                              </h3>
+                              <p dir="ltr">
+                                Apabila mahasiswa atau dosen mengalami kesulitan
+                                dalam mengakses website E-Learning, seperti
+                                halaman tidak dapat dibuka, tampilan tidak
+                                muncul dengan sempurna, upload tugas tidak
+                                berhasil, atau proses login gagal, maka
+                                disarankan untuk melakukan langkah-langkah
+                                penyelesaian berikut:
+                              </p>
+                              <ol>
+                                <li dir="ltr" aria-level="1">
+                                  <p dir="ltr" role="presentation">
+                                    Gunakan Browser Alternatif<br />Pastikan
+                                    Anda mencoba membuka website menggunakan
+                                    browser lain seperti:
+                                  </p>
+                                </li>
+                                <ul>
+                                  <li dir="ltr" aria-level="2">
+                                    <p dir="ltr" role="presentation">
+                                      Google Chrome
+                                    </p>
+                                  </li>
+                                  <li dir="ltr" aria-level="2">
+                                    <p dir="ltr" role="presentation">
+                                      Mozilla Firefox
+                                    </p>
+                                  </li>
+                                  <li dir="ltr" aria-level="2">
+                                    <p dir="ltr" role="presentation">
+                                      Microsoft Edge
+                                    </p>
+                                  </li>
+                                  <li dir="ltr" aria-level="2">
+                                    <p dir="ltr" role="presentation">
+                                      Safari (untuk pengguna Mac dan iPhone)
+                                    </p>
+                                  </li>
+                                </ul>
+                              </ol>
+                              <p dir="ltr">
+                                Beberapa kendala akses dapat terjadi karena
+                                perbedaan kompatibilitas antara sistem dengan
+                                browser yang digunakan.
+                              </p>
+                              <ol start="2">
+                                <li dir="ltr" aria-level="1">
+                                  <p dir="ltr" role="presentation">
+                                    Gunakan Mode Private/Incognito Tab<br />Mode
+                                    ini membantu menghapus sementara cache,
+                                    cookies, serta data sesi lama yang dapat
+                                    mengganggu proses login atau tampilan
+                                    website.
+                                  </p>
+                                </li>
+                              </ol>
+                              <p dir="ltr">
+                                Berikut cara mengaktifkannya pada masing-masing
+                                browser:
+                              </p>
+                              <ul>
+                                <li dir="ltr" aria-level="2">
+                                  <p dir="ltr" role="presentation">
+                                    Google Chrome / Microsoft Edge: Tekan Ctrl +
+                                    Shift + N (Windows) atau Command + Shift + N
+                                    (Mac).
+                                  </p>
+                                </li>
+                                <li dir="ltr" aria-level="2">
+                                  <p dir="ltr" role="presentation">
+                                    Mozilla Firefox: Tekan Ctrl + Shift + P
+                                    (Windows) atau Command + Shift + P (Mac).
+                                  </p>
+                                </li>
+                                <li dir="ltr" aria-level="2">
+                                  <p dir="ltr" role="presentation">
+                                    Safari: Pilih menu File → New Private Window
+                                    pada Mac, atau buka Private Tab di tampilan
+                                    tab pada perangkat iPhone/iPad.
+                                  </p>
+                                </li>
+                              </ul>
+                              <ol start="3">
+                                <li dir="ltr" aria-level="1">
+                                  <p dir="ltr" role="presentation">
+                                    Catatan Tambahan:<br />Jika setelah
+                                    melakukan langkah-langkah di atas website
+                                    masih tidak dapat diakses, pastikan koneksi
+                                    internet stabil dan coba bersihkan cache
+                                    browser secara manual melalui pengaturan
+                                    browser yang digunakan.
+                                  </p>
+                                </li>
+                              </ol>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn bg-danger-subtle text-danger waves-effect text-start"
+                            data-bs-dismiss="modal"
+                          >
+                            Tutup
+                          </button>
+                        </div>
+                      </div>
+                      <!-- /.modal-content -->
+                    </div>
+                  </div>
+                  <div
+                    class="modal fade"
+                    id="pengumuman-19"
+                    tabindex="-1"
+                    aria-labelledby="vertical-center-modal"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header d-flex align-items-center">
+                          <h4 class="modal-title" id="myLargeModalLabel">
+                            <i class="ti ti-speakerphone fs-6"></i> Berita Duka
+                            🥀
+                          </h4>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body p-4">
+                          <div class="row">
+                            <div class="col-lg-12 col-sm-12 mb-3">
+                              <img
+                                src="https://sso.esaunggul.ac.id/file/show/poster/MTk"
+                                class="w-100"
+                                alt=""
+                              />
+
+                              <br />
+                              <br />
+                              <p>
+                                Innalilahi wa innailaihi rojiun🥀<br /><br />Yayasan
+                                Pendidikan Kemala Bangsa, Rektor dan Civitas
+                                Akademika Universitas Esa Unggul Mengucapkan
+                                Turut Berduka Cita atas Meninggalnya,<br /><br />Ibu
+                                Prof. Dr. Dra. Hj. Dahniar Kemala binti
+                                Basjaruddin Rahman Motik (Kemala Motik) -
+                                Founder Yayasan Kemala Bangsa dan Rektor
+                                Universitas Esa Unggul (1993 - 2009)<br /><br />Semoga
+                                almarhumah husnul khotimah dan untuk keluarga
+                                yang ditinggalkan diberikan kesabaran dan
+                                ketabahan.<br />Aamiin ya rabbal alamin 🤲🏻
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn bg-danger-subtle text-danger waves-effect text-start"
+                            data-bs-dismiss="modal"
+                          >
+                            Tutup
+                          </button>
+                        </div>
+                      </div>
+                      <!-- /.modal-content -->
+                    </div>
+                  </div>
+                  <div
+                    class="modal fade"
+                    id="pengumuman-18"
+                    tabindex="-1"
+                    aria-labelledby="vertical-center-modal"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header d-flex align-items-center">
+                          <h4 class="modal-title" id="myLargeModalLabel">
+                            <i class="ti ti-speakerphone fs-6"></i> The 4th
+                            International Youth Conference on Language and
+                            Culture (IYCLAC) 2025
+                          </h4>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body p-4">
+                          <div class="row">
+                            <div class="col-lg-12 col-sm-12 mb-3">
+                              <img
+                                src="https://sso.esaunggul.ac.id/file/show/poster/MTg"
+                                class="w-100"
+                                alt=""
+                              />
+
+                              <br />
+                              <br />
+                              <p>
+                                The Language and Culture Center of Universitas
+                                Esa Unggul proudly presents The 4th
+                                International Youth Conference on Language and
+                                Culture (IYCLAC) 2025 with the theme:<br />“The
+                                New Global Currency: Developing Intercultural
+                                Intelligence for the Future of Work”
+                              </p>
+                              <p>
+                                📌 This conference will be held online via
+                                ZOOM:<br />🗓 Date: October 25, 2025<br />🕗
+                                Time: 08.00 AM – 12.00 PM (Jakarta Time, GMT+7)
+                              </p>
+                              <p>
+                                🌍 Keynote Speakers:<br />• Oscar Viquez
+                                Valverde – Universidad Latina De Costa Rica,
+                                Costa Rica<br />• Parveen Kumar – American
+                                University of Technology, Uzbekistan<br />• Yuta
+                                Otake – Teacher Trainer, USA<br />• James Ronald
+                                O.M – Mapua Malayan Colleges Laguna, Philippines
+                              </p>
+                              <p>
+                                🧠 Conference Objectives:<br />• Develop
+                                students’ knowledge and understanding of
+                                intercultural intelligence.<br />• Provide a
+                                global forum for students to exchange
+                                perspectives on cultural challenges in the
+                                modern workplace.<br />• Foster international
+                                networking among students and academics in the
+                                fields of language, culture, and global
+                                education.
+                              </p>
+                              <p>
+                                🤝 Organized by Universitas Esa Unggul in
+                                collaboration with:<br />• Universidad
+                                Internacional del Ecuador (UIDE), Ecuador<br />•
+                                American University of Technology, Uzbekistan<br />•
+                                Universidad Latina De Costa Rica, Costa Rica<br />•
+                                Mapua Malayan Colleges Laguna, Philippines<br />•
+                                The Mangrove, USA
+                              </p>
+                              <p>
+                                📝 Student Presenter Registration:<br />📅
+                                September 25 – October 15, 2025<br />🔗
+                                bit.ly/4thIYCLACParallelSpeaker
+                              </p>
+                              <p>
+                                👥 General Participant/Non-Presenter
+                                Registration:<br />🔗
+                                https://seminar-web.esaunggul.ac.id
+                              </p>
+                              <p>
+                                📱 Contact Persons:<br />• Evto: +62
+                                813-3249-7843<br />• Arya: +62 812-8057-9715
+                              </p>
+                              <p>
+                                <br />📌 Follow Us:<br />• Instagram:
+                                @lbkueofficial<br />• Email:
+                                lbk@esaunggul.ac.id<br />• Website:
+                                lbk.esaunggul.ac.id
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn bg-danger-subtle text-danger waves-effect text-start"
+                            data-bs-dismiss="modal"
+                          >
+                            Tutup
+                          </button>
+                        </div>
+                      </div>
+                      <!-- /.modal-content -->
+                    </div>
+                  </div>
+                  <div
+                    class="modal fade"
+                    id="pengumuman-17"
+                    tabindex="-1"
+                    aria-labelledby="vertical-center-modal"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header d-flex align-items-center">
+                          <h4 class="modal-title" id="myLargeModalLabel">
+                            <i class="ti ti-speakerphone fs-6"></i> Hangari
+                            Korean Club
+                          </h4>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body p-4">
+                          <div class="row">
+                            <div class="col-lg-12 col-sm-12 mb-3">
+                              <img
+                                src="https://sso.esaunggul.ac.id/file/show/poster/MTc"
+                                class="w-100"
+                                alt=""
+                              />
+
+                              <br />
+                              <br />
+                              <p>
+                                <strong
+                                  >Hangari Korean Club: Exciting Regular
+                                  Activities to Explore Korean Culture at
+                                  Universitas Esa Unggul</strong
+                                >
+                              </p>
+                              <p>
+                                Hangari Korean Club, a community under the
+                                Language and Culture Institute of Universitas
+                                Esa Unggul, will hold regular activities focused
+                                on Korean culture. These activities are designed
+                                to provide a fun and engaging learning
+                                experience while broadening participants’
+                                cultural knowledge.
+                              </p>
+                              <p>
+                                Every month, Hangari Korean Club will meet
+                                twice, on the 2nd and 4th Saturdays. The first
+                                meeting will take place on October 11, 2025, at
+                                Room 702, Building A, Universitas Esa Unggul
+                                Campus, Jakarta. The sessions will run from 3:00
+                                PM to 5:00 PM.
+                              </p>
+                              <p>
+                                Hangari Korean Club invites Universitas Esa
+                                Unggul students interested in Korean culture to
+                                join and enjoy various exciting activities
+                                presented in a fun learning atmosphere, ranging
+                                from learning the language and culture to
+                                experiencing unique aspects of Korea
+                                interactively.
+                              </p>
+                              <p>
+                                For more information and registration,<br />please
+                                contact Eta at +62 822-6191-5854 or register
+                                directly via the link:
+                                https://bit.ly/HangariKoreanClub<br />.
+                              </p>
+                              <p>Activity Details:</p>
+                              <p>Community: Hangari Korean Club</p>
+                              <p>
+                                Organizer: Language and Culture Center,
+                                Universitas Esa Unggul
+                              </p>
+                              <p>
+                                📅Schedule: Every 2nd and 4th Saturday of the
+                                month
+                              </p>
+                              <p>🕒 Time: 3:00 PM – 5:00 PM</p>
+                              <p>
+                                🏛️ Venue: Room 702, Building A, Universitas Esa
+                                Unggul Campus, Jakarta
+                              </p>
+                              <p>📲 Contact: +62 822-6191-5854 (Eta)</p>
+                              <p>
+                                🖇️ Registration:
+                                https://bit.ly/HangariKoreanClub
+                              </p>
+                              <p>
+                                Join Hangari Korean Club and celebrate the joy
+                                of learning Korean culture in a warm and
+                                friendly atmosphere!
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn bg-danger-subtle text-danger waves-effect text-start"
+                            data-bs-dismiss="modal"
+                          >
+                            Tutup
+                          </button>
+                        </div>
+                      </div>
+                      <!-- /.modal-content -->
+                    </div>
+                  </div>
+                  <div
+                    class="modal fade"
+                    id="pengumuman-16"
+                    tabindex="-1"
+                    aria-labelledby="vertical-center-modal"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header d-flex align-items-center">
+                          <h4 class="modal-title" id="myLargeModalLabel">
+                            <i class="ti ti-speakerphone fs-6"></i> BSI
+                            Scholarship 2025!✨🏆
+                          </h4>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body p-4">
+                          <div class="row">
+                            <div class="col-lg-12 col-sm-12 mb-3">
+                              <img
+                                src="https://sso.esaunggul.ac.id/file/show/poster/MTY"
+                                class="w-100"
+                                alt=""
+                              />
+
+                              <br />
+                              <br />
+                              <p>Halo Sobat Unggul! 👋🏻</p>
+                              <p>
+                                Buat kamu yang sedang mencari Beasiswa tahun
+                                ini, pas banget nih!<br />Yuk daftar BSI
+                                Scholarship 2025!✨🏆
+                              </p>
+                              <p>
+                                🗒️ SYARAT PENDAFTARAN<br />✅ Termasuk pada
+                                kategori mahasiswa prasejahtera yang dibuktikan
+                                dengan SKTM<br />✅ IPK Min 3.00<br />✅
+                                Mahasiswa aktif tahun ke 2 dari kampus<br />✅
+                                Tidak sedang menerima beasiswa sejenis<br />✅
+                                Follow @bsi_scholarship dan @bsimaslahat di
+                                Instagram
+                              </p>
+                              <p>
+                                💡FASILITAS PROGRAM<br />✅ Beasiswa UKT selama
+                                6 semester<br />✅ Bimbingan kepemimpinan diri
+                                dan pembangunan karakter<br />✅ Pelatihan
+                                keuangan ekonomi syariah<br />✅ Berpeluang
+                                magang di industri ekonomi syariah<br />✅
+                                Program social project
+                              </p>
+                              <p>
+                                ⏳TIMELINE<br />✅ Open Recruitment: 1 Sep - 5
+                                Okt 2025<br />✅ Seleksi Tahap 1 (Administrasi):
+                                6 - 13 Okt 2025<br />✅ Seleksi Tahap 2 (Paper
+                                Test): 18-19 Okt 2025<br />✅ Pengumuman Akhir:
+                                3 Nov 2025
+                              </p>
+                              <p>
+                                🔗 Link Pendaftaran:
+                                linktr.ee/BSI_Scholarship<br />Informasi
+                                selengkapnya: www.bsimaslahat.or.id
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn bg-danger-subtle text-danger waves-effect text-start"
+                            data-bs-dismiss="modal"
+                          >
+                            Tutup
+                          </button>
+                        </div>
+                      </div>
+                      <!-- /.modal-content -->
+                    </div>
+                  </div>
+                  <div
+                    class="modal fade"
+                    id="pengumuman-15"
+                    tabindex="-1"
+                    aria-labelledby="vertical-center-modal"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header d-flex align-items-center">
+                          <h4 class="modal-title" id="myLargeModalLabel">
+                            <i class="ti ti-speakerphone fs-6"></i> 📢 TOEFL ITP
+                            PREPARATION COURSE – Batch 1
+                          </h4>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body p-4">
+                          <div class="row">
+                            <div class="col-lg-12 col-sm-12 mb-3">
+                              <img
+                                src="https://sso.esaunggul.ac.id/file/show/poster/MTU"
+                                class="w-100"
+                                alt=""
+                              />
+
+                              <br />
+                              <br />
+                              <p>📢 TOEFL ITP PREPARATION COURSE – Batch 1</p>
+                              <p>
+                                The Language and Culture Center of Universitas
+                                Esa Unggul is pleased to announce the opening of
+                                registration for the TOEFL ITP Preparation
+                                Course. This program is designed for students,
+                                lecturers, and staff who wish to improve their
+                                English proficiency as preparation for the TOEFL
+                                ITP test.
+                              </p>
+                              <p>
+                                ✨ Course Period: September – November 2025<br />📆
+                                Schedule: Wednesdays and Fridays | 16 meetings
+                                (120 minutes each)<br />⏰ Time: 4:00 PM – 6:00
+                                PM (Online)
+                              </p>
+                              <p>
+                                📚 Course Contents:<br />1️⃣ Pre &amp; Post
+                                Test<br />2️⃣ Listening Comprehension<br />3️⃣
+                                Structure &amp; Written Expressions<br />4️⃣
+                                Vocabulary &amp; Reading Comprehension
+                              </p>
+                              <p>
+                                💰 Tuition Fee: IDR 1.400.000 ,-<br />(5
+                                participants minimum)<br />Payment Account: BNI
+                                0218392241 a.n. Universitas Esa Unggul
+                              </p>
+                              <p>
+                                🔗 Registration Link:<br /><a
+                                  href="https://forms.gle/xMvB2LQJnfWhqZ4Q8"
+                                  target="_blank"
+                                  rel="noopener"
+                                  data-saferedirecturl="https://www.google.com/url?q=https://forms.gle/xMvB2LQJnfWhqZ4Q8&amp;source=gmail&amp;ust=1755595824893000&amp;usg=AOvVaw2RHQnb7qH-kPRcABTgLI20"
+                                  >https://forms.gle/<wbr />xMvB2LQJnfWhqZ4Q8</a
+                                >
+                              </p>
+                              <p>
+                                📲 For further information, please contact:<br />•
+                                +62 813-3249-7843 (Evto)<br />• +62
+                                812-8057-9715 (Arya)
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn bg-danger-subtle text-danger waves-effect text-start"
+                            data-bs-dismiss="modal"
+                          >
+                            Tutup
+                          </button>
+                        </div>
+                      </div>
+                      <!-- /.modal-content -->
+                    </div>
+                  </div>
+                  <div
+                    class="modal fade"
+                    id="pengumuman-14"
+                    tabindex="-1"
+                    aria-labelledby="vertical-center-modal"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header d-flex align-items-center">
+                          <h4 class="modal-title" id="myLargeModalLabel">
+                            <i class="ti ti-speakerphone fs-6"></i> 🌐✨ COIL
+                            Course: Professional English ✨🌐
+                          </h4>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body p-4">
+                          <div class="row">
+                            <div class="col-lg-12 col-sm-12 mb-3">
+                              <img
+                                src="https://sso.esaunggul.ac.id/file/show/poster/MTQ"
+                                class="w-100"
+                                alt=""
+                              />
+
+                              <br />
+                              <br />
+                              <p>
+                                🌐✨ COIL Course: Professional English ✨🌐<br />An
+                                international collaboration for UEU students,
+                                lecturers, and staff!
+                              </p>
+                              <p>
+                                The Language and Culture Center of Universitas
+                                Esa Unggul proudly presents a Collaborative
+                                Online International Learning (COIL) course in
+                                partnership with universities from Indonesia
+                                (Universitas Esa Unggul), Ecuador (Universidad
+                                Internacional del Ecuador), Uzbekistan (American
+                                University of Technology), Costa Rica
+                                (Universidad Latina De Costa Rica), and
+                                Philippines (Mapua Malayan Colleges Laguna).
+                              </p>
+                              <p>
+                                📚 Batch 1: September – December 2025<br />🕗
+                                Every Monday, 8 – 10 PM Jakarta time<br />💻
+                                Online class (13 meetings, 120 minutes each)
+                              </p>
+                              <p>
+                                📌 Topics include:<br />• Personal Branding<br />•
+                                Effective Emails<br />• Short Proposals<br />•
+                                Non-Verbal Communication<br />• Oral
+                                Communication<br />• Effective Presentation<br />•
+                                ePortfolio
+                              </p>
+                              <p>
+                                🔗 Register now:<br />https://forms.gle/2W8vJZAwFgkQWSH97
+                              </p>
+                              <p>
+                                📞 Contact persons:<br />+62 813-3249-7843
+                                (Evto)<br />+62 812-8057-9715 (Arya)
+                              </p>
+                              <p>
+                                🎯 Don’t miss this opportunity to improve your
+                                professional English skills through a global
+                                learning experience!
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn bg-danger-subtle text-danger waves-effect text-start"
+                            data-bs-dismiss="modal"
+                          >
+                            Tutup
+                          </button>
+                        </div>
+                      </div>
+                      <!-- /.modal-content -->
+                    </div>
+                  </div>
+                  <div
+                    class="modal fade"
+                    id="pengumuman-13"
+                    tabindex="-1"
+                    aria-labelledby="vertical-center-modal"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header d-flex align-items-center">
+                          <h4 class="modal-title" id="myLargeModalLabel">
+                            <i class="ti ti-speakerphone fs-6"></i> 🎉 LOMBA
+                            MADING UNIVERSITAS ESA UNGGUL JAKARTA🎉
+                          </h4>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body p-4">
+                          <div class="row">
+                            <div class="col-lg-12 col-sm-12 mb-3">
+                              <img
+                                src="https://sso.esaunggul.ac.id/file/show/poster/MTM"
+                                class="w-100"
+                                alt=""
+                              />
+
+                              <br />
+                              <br />
+                              <p>
+                                📍 Univeritas Esa Unggul Jakarta<br />🗓 Gratis
+                                &amp; Khusus untuk sekolah mitra yang sudah
+                                mendapatkan Mading Universitas Esa Unggul
+                                Jakarta.<br /><br />💡 Tema:<br />"INDONESIA
+                                MAJU DI ERA DIGITALISASI"<br /><br />📌 Total
+                                Hadiah Jutaan Rupiah!<br />🥇 Juara 1:
+                                Rp1.000.000<br />🥈 Juara 2: Rp750.000<br />🥉
+                                Juara 3: Rp500.000<br />🏅 Juara Favorit:
+                                Rp250.000<br />*Dapatkan pelatihan Jurnalistik
+                                di Era Digital bagi 3 Terbaik*<br /><br />📝
+                                Pendaftaran &amp; Upload Karya:<br />11 – 20
+                                Agustus 2025<br />🎊 Pengumuman Pemenang:<br />1
+                                September 2025<br /><br />📲 Daftar Sekarang!<br />📌
+                                Link &amp; Juknis: Scan QR di poster<br />📞
+                                Info: https://wa.me//6281390073334 (Lissa)<br /><br />✨
+                                Tunjukkan kreativitas timmu dan jadilah yang
+                                terbaik!
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn bg-danger-subtle text-danger waves-effect text-start"
+                            data-bs-dismiss="modal"
+                          >
+                            Tutup
+                          </button>
+                        </div>
+                      </div>
+                      <!-- /.modal-content -->
+                    </div>
+                  </div>
+                  <div
+                    class="modal fade"
+                    id="pengumuman-12"
+                    tabindex="-1"
+                    aria-labelledby="vertical-center-modal"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header d-flex align-items-center">
+                          <h4 class="modal-title" id="myLargeModalLabel">
+                            <i class="ti ti-speakerphone fs-6"></i> Kursus
+                            Bahasa Korea - LBK
+                          </h4>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body p-4">
+                          <div class="row">
+                            <div class="col-lg-12 col-sm-12 mb-3">
+                              <img
+                                src="https://sso.esaunggul.ac.id/file/show/poster/MTI"
+                                class="w-100"
+                                alt=""
+                              />
+
+                              <br />
+                              <br />
+                              <p>
+                                🌟 ANNYEONG, K-LOVERS!
+                                <img
+                                  class="an1"
+                                  draggable="false"
+                                  src="https://fonts.gstatic.com/s/e/notoemoji/16.0/1f1f0_1f1f7/72.png"
+                                  alt="🇰🇷"
+                                  width="13"
+                                  height="13"
+                                  loading="lazy"
+                                  data-emoji="🇰🇷"
+                                  aria-label="🇰🇷"
+                                /><br />LEMBAGA BAHASA DAN KEBUDAYAAN UEU IN
+                                COLLABORATION WITH DAEGU CATHOLIC UNIVERSITY AND
+                                KING SEJONG INSTITUTE JAKARTA 🤜🏻🤛🏻<br />Mau jago
+                                Bahasa Korea dari nol? Yuk gabung di Kursus
+                                Bahasa Korea – Level Dasar 🔥✨
+                              </p>
+                              <p>
+                                📅 12 Agustus – 16 September 2025<br />📍 Ruang
+                                406–407, Gedung A, Kampus Kebon Jeruk<br />🕒
+                                Jadwal kelas:<br />* Selasa &amp; Rabu: 11.00 –
+                                14.00 WIB<br />* Jumat: 13.30 – 16.30 WIB
+                              </p>
+                              <p>
+                                📚 Yang dipelajari:<br />🔤 Huruf Hangeul<br />🧠
+                                Kosakata dasar<br />🗣️ Percakapan sehari-hari<br />👂📖✍️
+                                Skill menyimak, membaca, &amp; menulis
+                              </p>
+                              <p>
+                                💸 GRATIS kursusnya!<br />Cuma bayar biaya
+                                pendaftaran Rp 300.000 (untuk 1 level = 45 jam)
+                              </p>
+                              <p>
+                                📥 Daftar langsung lewat link ini ya:<br />👉
+                                <a
+                                  href="https://bit.ly/KursusBahasaKoreaUEU"
+                                  target="_blank"
+                                  rel="noopener"
+                                  data-saferedirecturl="https://www.google.com/url?q=https://bit.ly/KursusBahasaKoreaUEU&amp;source=gmail&amp;ust=1752291204639000&amp;usg=AOvVaw188r_e3THdqZ80-YdVyJU1"
+                                  >https://bit.ly/<wbr />KursusBahasaKoreaUEU</a
+                                >
+                              </p>
+                              <p>
+                                💳 Pembayaran ke:<br />BNI – 0218392241<br />a.n.
+                                Universitas Esa Unggul
+                              </p>
+                              <p>
+                                ❓ Butuh info lebih lanjut?<br />📞 EVTO:
+                                0813-3249-7843<br />📞 ARYA: 0812-8057-9715
+                              </p>
+                              <p>
+                                🎉 Jangan sampai ketinggalan! Belajar Bahasa
+                                Korea bareng pengajar kece dan materi langsung
+                                dari ahlinya!
+                                <img
+                                  class="an1"
+                                  draggable="false"
+                                  src="https://fonts.gstatic.com/s/e/notoemoji/16.0/1f1f0_1f1f7/72.png"
+                                  alt="🇰🇷"
+                                  width="13"
+                                  height="13"
+                                  loading="lazy"
+                                  data-emoji="🇰🇷"
+                                  aria-label="🇰🇷"
+                                />✨
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn bg-danger-subtle text-danger waves-effect text-start"
+                            data-bs-dismiss="modal"
+                          >
+                            Tutup
+                          </button>
+                        </div>
+                      </div>
+                      <!-- /.modal-content -->
+                    </div>
+                  </div>
+                  <div
+                    class="modal fade"
+                    id="pengumuman-11"
+                    tabindex="-1"
+                    aria-labelledby="vertical-center-modal"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header d-flex align-items-center">
+                          <h4 class="modal-title" id="myLargeModalLabel">
+                            <i class="ti ti-speakerphone fs-6"></i> GSC Series -
+                            Use of AI in Healthcare MIM 513 Artificial
+                            Intelligence in Health Data
+                          </h4>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body p-4">
+                          <div class="row">
+                            <div class="col-lg-12 col-sm-12 mb-3">
+                              <img
+                                src="https://sso.esaunggul.ac.id/file/show/poster/MTE"
+                                class="w-100"
+                                alt=""
+                              />
+
+                              <br />
+                              <br />
+                              <p>
+                                Hello Sobat Unggul!👋🏻<br /><br />Global
+                                Signature Course Series:<br />Use of AI in
+                                Healthcare<br />MIM 513 Artificial Intelligence
+                                in Health Data✨<br /><br />💡When?<br />*
+                                Wednesday, 16 July 2025 | 19.00 - 22.00 WIB<br />(Jakarta,
+                                Indonesia)<br />* Wednesday, 16 July 2025 |
+                                17.30 - 18.30 AM GMT +5.30<br />(Uttar Pradesh,
+                                India)<br /><br />🔗Meeting ID: 950 3509 6465<br />Passcode:
+                                355535<br /><br />🔉Speakers:<br />1. Mieke
+                                Nurmalasari, S.Si, M.Si, M.Sc. - Faculty Member
+                                Health Information Management Program, Faculty
+                                Health Science Universitas Esa Unggul,
+                                Indonesia.<br />2. Neha Gupta, Ph.D - Assistant
+                                Professor, Departement of Mathematics School of
+                                Natural Sciences Shiv Nadar University,
+                                India.<br /><br />Take part in an interactive,
+                                international classroom where borders don’t
+                                limit your learning. Be there, be inspired, and
+                                broaden your horizons! 🌟<br /><br />📌 Make
+                                sure to attend and be part of this global
+                                experience!
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn bg-danger-subtle text-danger waves-effect text-start"
+                            data-bs-dismiss="modal"
+                          >
+                            Tutup
+                          </button>
+                        </div>
+                      </div>
+                      <!-- /.modal-content -->
+                    </div>
+                  </div>
+                  <div
+                    class="modal fade"
+                    id="pengumuman-10"
+                    tabindex="-1"
+                    aria-labelledby="vertical-center-modal"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header d-flex align-items-center">
+                          <h4 class="modal-title" id="myLargeModalLabel">
+                            <i class="ti ti-speakerphone fs-6"></i> Webinar
+                            Sharing Alumni
+                          </h4>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body p-4">
+                          <div class="row">
+                            <div class="col-lg-12 col-sm-12 mb-3">
+                              <img
+                                src="https://sso.esaunggul.ac.id/file/show/poster/MTA"
+                                class="w-100"
+                                alt=""
+                              />
+
+                              <br />
+                              <br />
+                              <p>
+                                Sobat Unggul! 🙌🏻<br /><br />Webinar Sharing
+                                Alumni Gratis ada lagi nih‼️<br /><br />"Membentuk
+                                Karakter dan Kompetensi untuk Sukses di Dunia
+                                Kerja" - Ludfi Adi Kurniawan (Trainer dan HR
+                                Head PT. Parvis Magna Jaya)<br /><br />🗓️
+                                Kamis,10 Juli 2025<br />⏰ 13.00 - 14.30 WIB<br />📍
+                                Zoom Meeting<br />📌 Segera daftar di
+                                seminar-web.esaunggul.ac.id<br />✨ Free
+                                e-sertifikat<br />🔊 Terbuka untuk Umum
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn bg-danger-subtle text-danger waves-effect text-start"
+                            data-bs-dismiss="modal"
+                          >
+                            Tutup
+                          </button>
+                        </div>
+                      </div>
+                      <!-- /.modal-content -->
+                    </div>
+                  </div>
+                  <div
+                    class="modal fade"
+                    id="pengumuman-9"
+                    tabindex="-1"
+                    aria-labelledby="vertical-center-modal"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header d-flex align-items-center">
+                          <h4 class="modal-title" id="myLargeModalLabel">
+                            <i class="ti ti-speakerphone fs-6"></i> Kuliah Umum
+                            Fakultas Teknik
+                          </h4>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body p-4">
+                          <div class="row">
+                            <div class="col-lg-12 col-sm-12 mb-3">
+                              <img
+                                src="https://sso.esaunggul.ac.id/file/show/poster/OQ"
+                                class="w-100"
+                                alt=""
+                              />
+
+                              <br />
+                              <br />
+                              <p>
+                                Sobat Unggul dan Sivitas Akademika Universitas
+                                Esa Unggul! 🙌🏻<br /><br />Fakultas Teknik,
+                                Program Studi Perencanaan Wilayah dan Kota
+                                menyelenggarakan “Kuliah Umum: Geospasial
+                                Terpadu Dalam Perencanaan Tata Ruang di Tengah
+                                Revolusi Industri 5.0”✨🔥<br /><br />Catat
+                                tanggal dan waktunya:<br />🗓️ Rabu, 9 Juli
+                                2025<br />⏰10.00 - 12.00 WIB<br />📍Ruang 406,
+                                Universitas Esa Unggul Kampus Jakarta<br /><br />🗣️
+                                Sambutan<br />Ir. Roesfiansjah Rasjidin, M.T.,
+                                Ph.D - Dekan Fakultas Teknik Universitas Esa
+                                Unggul<br /><br />Serta menghadirkan Narasumber
+                                yang berkompeten di bidangnya,<br />🗣️ Dr. Ir.
+                                RA Belinda Arunarwati Margono, M.Sc. -
+                                Sekretaris Utama Badan Informasi Geospasial<br /><br />🗣️
+                                Moderator<br />Dr. Drs. Suprajaka, M.T. - Dosen
+                                Fakultas Teknik, Universitas Esa Unggul<br /><br />Mari
+                                Bersama Wujudkan Tri Dharma Perguruan Tinggi💡💪🏻
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn bg-danger-subtle text-danger waves-effect text-start"
+                            data-bs-dismiss="modal"
+                          >
+                            Tutup
+                          </button>
+                        </div>
+                      </div>
+                      <!-- /.modal-content -->
+                    </div>
+                  </div>
+                  <div
+                    class="modal fade"
+                    id="pengumuman-8"
+                    tabindex="-1"
+                    aria-labelledby="vertical-center-modal"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header d-flex align-items-center">
+                          <h4 class="modal-title" id="myLargeModalLabel">
+                            <i class="ti ti-speakerphone fs-6"></i> ASEAN Week
+                            at FPT University, Vietnam!
+                          </h4>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body p-4">
+                          <div class="row">
+                            <div class="col-lg-12 col-sm-12 mb-3">
+                              <img
+                                src="https://sso.esaunggul.ac.id/file/show/poster/OA"
+                                class="w-100"
+                                alt=""
+                              />
+
+                              <br />
+                              <br />
+                              <p>
+                                <img
+                                  src="https://sso.esaunggul.ac.id/assets/editor/8e9994a43a05e8535313cd5837a74c10.jpeg"
+                                  alt=""
+                                  width="288"
+                                  height="360"
+                                /><img
+                                  src="https://sso.esaunggul.ac.id/assets/editor/5702fd106498f4d30763530dde2d4f5c.jpeg"
+                                  alt=""
+                                  width="287"
+                                  height="359"
+                                />
+                              </p>
+                              <div dir="auto">
+                                Halo Sobat Unggul!<br /><br />It’s your time to
+                                shine with the ASEAN Week at FPT University,
+                                Vietnam!<br /><br />Duration: August 18th –
+                                21st, 2025<br /><br />Registration deadline:
+                                July 11th , 2025<br /><br />Program Fee: $150
+                                USD (Rp 2,500,000) per-student<br />Coverage:<br />1.
+                                Workshop &amp; all program activities<br />2.
+                                Airport pick-up and see-off<br />3.
+                                Transportation for program activities<br />4.
+                                Welcome party<br />5. Accommodation (incl.
+                                breakfast)<br />6. Certificate<br /><br />Exclude:<br />1.
+                                Passport cost (Rp 650,000)<br />2. Two-way
+                                Airfares<br />3. Travel Insurance<br />4.
+                                Personal Expenses<br /><br />Check more
+                                details:<br />Link&nbsp;<a
+                                  href="https://bit.ly/AseanWeek"
+                                  target="_blank"
+                                  rel="noopener"
+                                  data-saferedirecturl="https://www.google.com/url?q=https://bit.ly/AseanWeek&amp;source=gmail&amp;ust=1751881333946000&amp;usg=AOvVaw3iRgw9HQikEnAZ70BwTwQU"
+                                  >https://bit.ly/AseanWeek</a
+                                ><br />Start your global journey NOW!<br /><br />For
+                                more information:<br />Email:&nbsp;<a
+                                  href="mailto:international.office@esaunggul.ac.id"
+                                  target="_blank"
+                                  rel="noopener"
+                                  >international.office@<wbr />esaunggul.ac.id</a
+                                ><br />WA: 081320003807 / 081292218139
+                              </div>
+                              <div dir="auto">
+                                IG : io.esaunggul<br /><a
+                                  href="https://www.instagram.com/p/DLR2Z2lx-6D/?igsh=MXZxOXJtbHV5dTBoZA=="
+                                  target="_blank"
+                                  rel="noopener"
+                                  data-saferedirecturl="https://www.google.com/url?q=https://www.instagram.com/p/DLR2Z2lx-6D/?igsh=MXZxOXJtbHV5dTBoZA==&amp;source=gmail&amp;ust=1751881333946000&amp;usg=AOvVaw3u7a6XANA9g4hfRa_EtrjA"
+                                  >https://www.instagram.com/p/<wbr />DLR2Z2lx-6D/?igsh=<wbr />MXZxOXJtbHV5dTBoZA==</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn bg-danger-subtle text-danger waves-effect text-start"
+                            data-bs-dismiss="modal"
+                          >
+                            Tutup
+                          </button>
+                        </div>
+                      </div>
+                      <!-- /.modal-content -->
+                    </div>
+                  </div>
+                  <div
+                    class="modal fade"
+                    id="pengumuman-6"
+                    tabindex="-1"
+                    aria-labelledby="vertical-center-modal"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header d-flex align-items-center">
+                          <h4 class="modal-title" id="myLargeModalLabel">
+                            <i class="ti ti-speakerphone fs-6"></i> Webinar
+                            Softskill "AI Tools Masterclass: Maksimalkan
+                            Productivity and Creativity"
+                          </h4>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body p-4">
+                          <div class="row">
+                            <div class="col-lg-12 col-sm-12 mb-3">
+                              <img
+                                src="https://sso.esaunggul.ac.id/file/show/poster/Ng"
+                                class="w-100"
+                                alt=""
+                              />
+
+                              <br />
+                              <br />
+                              <p>
+                                Sobat Unggul! 🙌🏻<br /><br />Webinar Softskill
+                                Gratis ada lagi nih‼️<br /><br />“AI Tools
+                                Masterclass: Maksimalkan Productivity and
+                                Creativity" - Muhammad Dafnis Fazlur Rahman
+                                (Founder and Tutor - Tutorial Skripsi)<br /><br />🗓️
+                                Jumat, 4 Juli 2025<br />⏰ 15.00 - 16.30 WIB<br />📍
+                                Zoom Meeting<br />📌 Segera daftar di
+                                seminar-web.esaunggul.ac.id<br />✨ Free
+                                e-sertifikat<br />🔊 Terbuka untuk Umum
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn bg-danger-subtle text-danger waves-effect text-start"
+                            data-bs-dismiss="modal"
+                          >
+                            Tutup
+                          </button>
+                        </div>
+                      </div>
+                      <!-- /.modal-content -->
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row">
+                          <h3 class="mb-3">Website Single Sign On</h3>
+                          <div class="col-lg-6">
+                            <a
+                              href="javascript:void(0);"
+                              onclick="
+                                if (!window.__cfRLUnblockHandlers) return false;
+                                document.getElementById('siakad').submit();
+                              "
+                            >
+                              <div class="card card-hover">
+                                <img
+                                  class="card-img-top img-responsive"
+                                  src="./assets/siakad.jpg"
+                                  alt="Card image cap"
+                                />
+                                <div class="card-body">
+                                  <div class="d-flex align-items-center">
+                                    <h4 class="card-title">SiAkad</h4>
+
+                                    <div class="ms-auto">
+                                      <i class="ti ti-arrow-right fs-8"></i>
+                                    </div>
+                                  </div>
+                                  <p class="mb-0 card-subtitle">
+                                    Sistem Informasi Akademik
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-lg-6">
+                            <a
+                              href="javascript:void(0);"
+                              onclick="
+                                if (!window.__cfRLUnblockHandlers) return false;
+                                document.getElementById('elearning').submit();
+                              "
+                            >
+                              <div class="card card-hover">
+                                <img
+                                  class="card-img-top img-responsive"
+                                  src="./assets/elearning.jpg"
+                                  alt="Card image cap"
+                                />
+                                <div class="card-body">
+                                  <div class="d-flex align-items-center">
+                                    <h4 class="card-title">E-Learning</h4>
+
+                                    <div class="ms-auto">
+                                      <i class="ti ti-arrow-right fs-8"></i>
+                                    </div>
+                                  </div>
+                                  <p class="mb-0 card-subtitle">
+                                    Sistem Pembelajaran Online
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-lg-12">
+                            <h3 class="fs-6 fw-bolder">Website-website</h3>
+                          </div>
+                        </div>
+                        <div
+                          class="owl-carousel leadership-carousel owl-theme mt-5 owl-loaded owl-drag"
+                        >
+                          <div class="owl-stage-outer">
+                            <div
+                              class="owl-stage"
+                              style="
+                                transform: translate3d(-1647px, 0px, 0px);
+                                transition: 0.25s;
+                                width: 3530px;
+                              "
+                            >
+                              <div
+                                class="owl-item cloned"
+                                style="width: 205.333px; margin-right: 30px"
+                              >
+                                <div class="item">
+                                  <a
+                                    href="https://ejurnal.esaunggul.ac.id/"
+                                    target="_BLANK"
+                                    class="card text-bg-info text-white w-100 card-hover"
+                                  >
+                                    <div class="card-body">
+                                      <div class="d-flex align-items-center">
+                                        <i class="ti ti-notebook display-6"></i>
+                                        <div class="ms-auto">
+                                          <i class="ti ti-arrow-right fs-8"></i>
+                                        </div>
+                                      </div>
+                                      <div class="mt-4">
+                                        <h4 class="card-title mb-1 text-white">
+                                          Portal Jurnal
+                                        </h4>
+                                        <p
+                                          class="card-text fw-normal text-white opacity-75"
+                                        >
+                                          Portal Jurnal Universitas Esa Unggul
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div
+                                class="owl-item cloned"
+                                style="width: 205.333px; margin-right: 30px"
+                              >
+                                <div class="item">
+                                  <a
+                                    href="https://scopus.com/"
+                                    target="_BLANK"
+                                    class="card text-bg-warning text-white w-100 card-hover"
+                                  >
+                                    <div class="card-body">
+                                      <div class="d-flex align-items-center">
+                                        <i class="ti ti-notebook display-6"></i>
+                                        <div class="ms-auto">
+                                          <i class="ti ti-arrow-right fs-8"></i>
+                                        </div>
+                                      </div>
+                                      <div class="mt-4">
+                                        <h4 class="card-title mb-1 text-white">
+                                          SCOPUS
+                                        </h4>
+                                        <p
+                                          class="card-text fw-normal text-white opacity-75"
+                                        >
+                                          Website Jurnal Scopus<br />&nbsp;
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div
+                                class="owl-item cloned"
+                                style="width: 205.333px; margin-right: 30px"
+                              >
+                                <div class="item">
+                                  <a
+                                    href="https://taylorfrancis.com/"
+                                    target="_BLANK"
+                                    class="card text-bg-danger text-white w-100 card-hover"
+                                  >
+                                    <div class="card-body">
+                                      <div class="d-flex align-items-center">
+                                        <i class="ti ti-notebook display-6"></i>
+                                        <div class="ms-auto">
+                                          <i class="ti ti-arrow-right fs-8"></i>
+                                        </div>
+                                      </div>
+                                      <div class="mt-4">
+                                        <h4 class="card-title mb-1 text-white">
+                                          Taylor &amp; Francis
+                                        </h4>
+                                        <p
+                                          class="card-text fw-normal text-white opacity-75"
+                                        >
+                                          Portal Jurnal Taylor and Francis
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div
+                                class="owl-item cloned"
+                                style="width: 205.333px; margin-right: 30px"
+                              >
+                                <div class="item">
+                                  <a
+                                    href="https://proquest.com/"
+                                    target="_BLANK"
+                                    class="card text-bg-secondary text-white w-100 card-hover"
+                                  >
+                                    <div class="card-body">
+                                      <div class="d-flex align-items-center">
+                                        <i class="ti ti-notebook display-6"></i>
+                                        <div class="ms-auto">
+                                          <i class="ti ti-arrow-right fs-8"></i>
+                                        </div>
+                                      </div>
+                                      <div class="mt-4">
+                                        <h4 class="card-title mb-1 text-white">
+                                          Proquest Jurnal
+                                        </h4>
+                                        <p
+                                          class="card-text fw-normal text-white opacity-75"
+                                        >
+                                          Portal Jurnal Proquest
+                                          <br />&nbsp;
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div
+                                class="owl-item"
+                                style="width: 205.333px; margin-right: 30px"
+                              >
+                                <div class="item">
+                                  <a
+                                    href="https://inbisueu.com/"
+                                    target="_BLANK"
+                                    class="card text-bg-success text-white w-100 card-hover"
+                                  >
+                                    <div class="card-body">
+                                      <div class="d-flex align-items-center">
+                                        <i
+                                          class="ti ti-currency-dollar display-6"
+                                        ></i>
+                                        <div class="ms-auto">
+                                          <i class="ti ti-arrow-right fs-8"></i>
+                                        </div>
+                                      </div>
+                                      <div class="mt-4">
+                                        <h4 class="card-title mb-1 text-white">
+                                          Inkubator Bisnis
+                                        </h4>
+                                        <p
+                                          class="card-text fw-normal text-white opacity-75"
+                                        >
+                                          Website Inkubator Bisnis Universitas
+                                          Esa Unggul
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div
+                                class="owl-item"
+                                style="width: 205.333px; margin-right: 30px"
+                              >
+                                <div class="item">
+                                  <a
+                                    href="https://hukumonline.com/"
+                                    target="_BLANK"
+                                    class="card text-bg-dark text-white w-100 card-hover"
+                                  >
+                                    <div class="card-body">
+                                      <div class="d-flex align-items-center">
+                                        <i class="ti ti-gavel display-6"></i>
+                                        <div class="ms-auto">
+                                          <i class="ti ti-arrow-right fs-8"></i>
+                                        </div>
+                                      </div>
+                                      <div class="mt-4">
+                                        <h4 class="card-title mb-1 text-white">
+                                          Hukum Online
+                                        </h4>
+                                        <p
+                                          class="card-text fw-normal text-white opacity-75"
+                                        >
+                                          Website Hukum Online<br />&nbsp;
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div
+                                class="owl-item"
+                                style="width: 205.333px; margin-right: 30px"
+                              >
+                                <div class="item">
+                                  <a
+                                    href="https://library.esaunggul.ac.id/"
+                                    target="_BLANK"
+                                    class="card text-bg-primary text-white w-100 card-hover"
+                                  >
+                                    <div class="card-body">
+                                      <div class="d-flex align-items-center">
+                                        <i class="ti ti-book display-6"></i>
+                                        <div class="ms-auto">
+                                          <i class="ti ti-arrow-right fs-8"></i>
+                                        </div>
+                                      </div>
+                                      <div class="mt-4">
+                                        <h4 class="card-title mb-1 text-white">
+                                          Portal Perpustakaan
+                                        </h4>
+                                        <p
+                                          class="card-text fw-normal text-white opacity-75"
+                                        >
+                                          Portal Perpustakaan Digital
+                                          Universitas Esa Unggul
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div
+                                class="owl-item active"
+                                style="width: 205.333px; margin-right: 30px"
+                              >
+                                <div class="item">
+                                  <a
+                                    href="https://ejurnal.esaunggul.ac.id/"
+                                    target="_BLANK"
+                                    class="card text-bg-info text-white w-100 card-hover"
+                                  >
+                                    <div class="card-body">
+                                      <div class="d-flex align-items-center">
+                                        <i class="ti ti-notebook display-6"></i>
+                                        <div class="ms-auto">
+                                          <i class="ti ti-arrow-right fs-8"></i>
+                                        </div>
+                                      </div>
+                                      <div class="mt-4">
+                                        <h4 class="card-title mb-1 text-white">
+                                          Portal Jurnal
+                                        </h4>
+                                        <p
+                                          class="card-text fw-normal text-white opacity-75"
+                                        >
+                                          Portal Jurnal Universitas Esa Unggul
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div
+                                class="owl-item active"
+                                style="width: 205.333px; margin-right: 30px"
+                              >
+                                <div class="item">
+                                  <a
+                                    href="https://scopus.com/"
+                                    target="_BLANK"
+                                    class="card text-bg-warning text-white w-100 card-hover"
+                                  >
+                                    <div class="card-body">
+                                      <div class="d-flex align-items-center">
+                                        <i class="ti ti-notebook display-6"></i>
+                                        <div class="ms-auto">
+                                          <i class="ti ti-arrow-right fs-8"></i>
+                                        </div>
+                                      </div>
+                                      <div class="mt-4">
+                                        <h4 class="card-title mb-1 text-white">
+                                          SCOPUS
+                                        </h4>
+                                        <p
+                                          class="card-text fw-normal text-white opacity-75"
+                                        >
+                                          Website Jurnal Scopus<br />&nbsp;
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div
+                                class="owl-item active"
+                                style="width: 205.333px; margin-right: 30px"
+                              >
+                                <div class="item">
+                                  <a
+                                    href="https://taylorfrancis.com/"
+                                    target="_BLANK"
+                                    class="card text-bg-danger text-white w-100 card-hover"
+                                  >
+                                    <div class="card-body">
+                                      <div class="d-flex align-items-center">
+                                        <i class="ti ti-notebook display-6"></i>
+                                        <div class="ms-auto">
+                                          <i class="ti ti-arrow-right fs-8"></i>
+                                        </div>
+                                      </div>
+                                      <div class="mt-4">
+                                        <h4 class="card-title mb-1 text-white">
+                                          Taylor &amp; Francis
+                                        </h4>
+                                        <p
+                                          class="card-text fw-normal text-white opacity-75"
+                                        >
+                                          Portal Jurnal Taylor and Francis
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div
+                                class="owl-item"
+                                style="width: 205.333px; margin-right: 30px"
+                              >
+                                <div class="item">
+                                  <a
+                                    href="https://proquest.com/"
+                                    target="_BLANK"
+                                    class="card text-bg-secondary text-white w-100 card-hover"
+                                  >
+                                    <div class="card-body">
+                                      <div class="d-flex align-items-center">
+                                        <i class="ti ti-notebook display-6"></i>
+                                        <div class="ms-auto">
+                                          <i class="ti ti-arrow-right fs-8"></i>
+                                        </div>
+                                      </div>
+                                      <div class="mt-4">
+                                        <h4 class="card-title mb-1 text-white">
+                                          Proquest Jurnal
+                                        </h4>
+                                        <p
+                                          class="card-text fw-normal text-white opacity-75"
+                                        >
+                                          Portal Jurnal Proquest
+                                          <br />&nbsp;
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div
+                                class="owl-item cloned"
+                                style="width: 205.333px; margin-right: 30px"
+                              >
+                                <div class="item">
+                                  <a
+                                    href="https://inbisueu.com/"
+                                    target="_BLANK"
+                                    class="card text-bg-success text-white w-100 card-hover"
+                                  >
+                                    <div class="card-body">
+                                      <div class="d-flex align-items-center">
+                                        <i
+                                          class="ti ti-currency-dollar display-6"
+                                        ></i>
+                                        <div class="ms-auto">
+                                          <i class="ti ti-arrow-right fs-8"></i>
+                                        </div>
+                                      </div>
+                                      <div class="mt-4">
+                                        <h4 class="card-title mb-1 text-white">
+                                          Inkubator Bisnis
+                                        </h4>
+                                        <p
+                                          class="card-text fw-normal text-white opacity-75"
+                                        >
+                                          Website Inkubator Bisnis Universitas
+                                          Esa Unggul
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div
+                                class="owl-item cloned"
+                                style="width: 205.333px; margin-right: 30px"
+                              >
+                                <div class="item">
+                                  <a
+                                    href="https://hukumonline.com/"
+                                    target="_BLANK"
+                                    class="card text-bg-dark text-white w-100 card-hover"
+                                  >
+                                    <div class="card-body">
+                                      <div class="d-flex align-items-center">
+                                        <i class="ti ti-gavel display-6"></i>
+                                        <div class="ms-auto">
+                                          <i class="ti ti-arrow-right fs-8"></i>
+                                        </div>
+                                      </div>
+                                      <div class="mt-4">
+                                        <h4 class="card-title mb-1 text-white">
+                                          Hukum Online
+                                        </h4>
+                                        <p
+                                          class="card-text fw-normal text-white opacity-75"
+                                        >
+                                          Website Hukum Online<br />&nbsp;
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div
+                                class="owl-item cloned"
+                                style="width: 205.333px; margin-right: 30px"
+                              >
+                                <div class="item">
+                                  <a
+                                    href="https://library.esaunggul.ac.id/"
+                                    target="_BLANK"
+                                    class="card text-bg-primary text-white w-100 card-hover"
+                                  >
+                                    <div class="card-body">
+                                      <div class="d-flex align-items-center">
+                                        <i class="ti ti-book display-6"></i>
+                                        <div class="ms-auto">
+                                          <i class="ti ti-arrow-right fs-8"></i>
+                                        </div>
+                                      </div>
+                                      <div class="mt-4">
+                                        <h4 class="card-title mb-1 text-white">
+                                          Portal Perpustakaan
+                                        </h4>
+                                        <p
+                                          class="card-text fw-normal text-white opacity-75"
+                                        >
+                                          Portal Perpustakaan Digital
+                                          Universitas Esa Unggul
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div
+                                class="owl-item cloned"
+                                style="width: 205.333px; margin-right: 30px"
+                              >
+                                <div class="item">
+                                  <a
+                                    href="https://ejurnal.esaunggul.ac.id/"
+                                    target="_BLANK"
+                                    class="card text-bg-info text-white w-100 card-hover"
+                                  >
+                                    <div class="card-body">
+                                      <div class="d-flex align-items-center">
+                                        <i class="ti ti-notebook display-6"></i>
+                                        <div class="ms-auto">
+                                          <i class="ti ti-arrow-right fs-8"></i>
+                                        </div>
+                                      </div>
+                                      <div class="mt-4">
+                                        <h4 class="card-title mb-1 text-white">
+                                          Portal Jurnal
+                                        </h4>
+                                        <p
+                                          class="card-text fw-normal text-white opacity-75"
+                                        >
+                                          Portal Jurnal Universitas Esa Unggul
+                                        </p>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="owl-nav">
+                            <button
+                              type="button"
+                              role="presentation"
+                              class="owl-prev"
+                            >
+                              <i
+                                class="ti ti-arrow-left fs-7 round-48 hstack justify-content-center bg-primary-subtle rounded-circle"
+                              ></i></button
+                            ><button
+                              type="button"
+                              role="presentation"
+                              class="owl-next"
+                            >
+                              <i
+                                class="ti ti-arrow-right fs-7 round-48 hstack justify-content-center bg-primary-subtle rounded-circle"
+                              ></i>
+                            </button>
+                          </div>
+                          <div class="owl-dots disabled"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Import Js Files -->
+    <script
+      src="./assets/modern/js/vendor.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="./assets/jquery-3.7.1.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="./assets/modern/libs/bootstrap/dist/js/bootstrap.bundle.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.js"
+      type="text/javascript"
+    ></script>
+
+    <script
+      src="./assets/modern/libs/simplebar/dist/simplebar.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="./assets/modern/js/theme/app.horizontal.init.js"
+      type="text/javascript"
+    ></script>
+
+    <script
+      src="./assets/modern/libs/owl.carousel/dist/owl.carousel.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="./assets/modern/libs/block-ui/jquery.blockUI.js"
+      type="text/javascript"
+    ></script>
+
+    <script
+      src="./assets/modern/js/theme/theme.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="./assets/modern/js/theme/app.min.js"
+      type="text/javascript"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"
+      type="text/javascript"
+    ></script>
+
+    <script type="text/javascript">
+      var h = new Date().getHours();
+      var m = new Date().getMinutes();
+      var s = new Date().getSeconds();
+      if (h >= 4 && h < 10)
+        document.getElementById("sapa").innerHTML = "Selamat Pagi";
+      if (h >= 10 && h < 15)
+        document.getElementById("sapa").innerHTML = "Selamat Siang";
+      if (h >= 15 && h < 18)
+        document.getElementById("sapa").innerHTML = "Selamat Sore";
+      if (h >= 18 || h < 4)
+        document.getElementById("sapa").innerHTML = "Selamat Malam";
+
+      function updateClock() {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, "0");
+        const minutes = String(now.getMinutes()).padStart(2, "0");
+        const seconds = String(now.getSeconds()).padStart(2, "0");
+        const timeString = `${hours}:${minutes}:${seconds}`;
+        document.getElementById("clock").textContent = timeString;
+      }
+
+      setInterval(updateClock, 1000);
+      updateClock();
+
+      function openHukumOnline() {
+        window.open("https://hukumonline.com", "_blank");
+      }
+
+      $(".leadership-carousel").owlCarousel({
+        loop: true,
+        nav: true,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsiveClass: true,
+        responsiveRefreshRate: 200,
+        margin: 30,
+        navText: [
+          '<i class="ti ti-arrow-left fs-7 round-48 hstack justify-content-center bg-primary-subtle rounded-circle"></i>', // Previous button
+          '<i class="ti ti-arrow-right fs-7 round-48 hstack justify-content-center bg-primary-subtle rounded-circle"></i>', // Next button
+        ],
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          992: {
+            items: 3,
+          },
+          1024: {
+            items: 3,
+          },
+        },
+      });
+
+      $(".template-carousel").owlCarousel({
+        loop: true,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 2500,
+        margin: 30,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          992: {
+            items: 3,
+          },
+          1024: {
+            items: 4,
+          },
+        },
+      });
+
+      $("#logoutbutton").click(function () {
+        // Tampilkan BlockUI
+        $.blockUI({
+          message: "<h1>Sampai jumpa lagi...</h1>",
+        });
+
+        // Redirect setelah delay 2 detik
+        setTimeout(function () {
+          window.location.href = "https://sso.esaunggul.ac.id/login/logout";
+        }, 2000);
+      });
+    </script>
+    <script
+      defer=""
+      src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447"
+      integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ=="
+      data-cf-beacon='{"version":"2024.11.0","token":"f39ba2dd9de44a098171e34a25fb228a","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
